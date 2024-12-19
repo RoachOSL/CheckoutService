@@ -22,7 +22,8 @@ The service uses Docker for containerization. By default:
 
 1. **Create a `.env` by copying `.env.example`:**
 
-   First, use the command below in the terminal to copy `.env.example` and create a `.env` file in your project directory.  
+   First, use the command below in the terminal (directory should be in checkout folder in my case it is: `"C:\Users\os199\IdeaProjects\checkout\checkout>
+")` to copy `.env.example` and create a `.env` file in your project directory.  
    This file will hold environment variables for your PostgreSQL setup.  
    It should be located in the same directory as `docker-compose.yaml`.  
    After creating the file, replace the placeholder values with your actual PostgreSQL username, password, and any other necessary configuration details.
