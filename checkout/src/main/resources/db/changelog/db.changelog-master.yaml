@@ -1,0 +1,57 @@
+databaseChangeLog:
+  - changeSet:
+      id: 1
+      author: Oskar
+      context: base
+      changes:
+        - sqlFile:
+            path: classpath:/db/changelog/changes/001_create_item_table.sql
+            relativeToChangelogFile: false
+  - changeSet:
+      id: 2
+      author: Oskar
+      context: base
+      changes:
+        - sqlFile:
+            path: classpath:/db/changelog/changes/002_create_bundle_promotion_table.sql
+            relativeToChangelogFile: false
+  - changeSet:
+      id: 3
+      author: Oskar
+      context: base
+      changes:
+        - sqlFile:
+            path: classpath:/db/changelog/changes/003_create_quantity_promotion_table.sql
+            relativeToChangelogFile: false
+  - changeSet:
+      id: 4
+      author: Oskar
+      context: base
+      changes:
+        - sqlFile:
+            path: classpath:/db/changelog/changes/004_create_indexes.sql
+            relativeToChangelogFile: false
+  - changeSet:
+      id: 5
+      author: Oskar
+      context: local
+      changes:
+        - sqlFile:
+            path: classpath:/db/changelog/changes/005_insert_items.sql
+            relativeToChangelogFile: false
+  - changeSet:
+      id: 6
+      author: Oskar
+      context: local
+      changes:
+        - sqlFile:
+            path: classpath:/db/changelog/changes/006_insert_bundle_promotions.sql
+            relativeToChangelogFile: false
+  - changeSet:
+      id: 7
+      author: Oskar
+      context: local
+      changes:
+        - sqlFile:
+            path: classpath:/db/changelog/changes/007_insert_quantity_promotions.sql
+            relativeToChangelogFile: false
