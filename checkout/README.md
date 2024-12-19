@@ -19,7 +19,20 @@ The service uses Docker for containerization. By default:
 
 ### How to Run It?
 
-1. **Checkout Service Setup:**
+1. **Create a `.env` by copying `.env.example`:**
+
+   First, use the command below in the terminal to copy `.env.example` and create a `.env` file in your project directory.  
+   This file will hold environment variables for your PostgreSQL setup.  
+   It should be located in the same directory as `docker-compose.yaml`.  
+   After creating the file, replace the placeholder values with your actual PostgreSQL username, password, and any other necessary configuration details.
+
+    ```bash
+    cp .env.example .env
+    ```
+
+   Alternatively, you can manually insert data in `.env.example` and rename file to `.env`.
+
+2. **Checkout Service Setup:**
     - Open a terminal in the root directory of the `checkout` service.
     - Build the project using Maven:
       ```bash
@@ -30,7 +43,7 @@ The service uses Docker for containerization. By default:
       docker build -t checkout-service:0.0.1-SNAPSHOT -f checkout/Dockerfile checkout
       ```
 
-2. **Running the Docker Container:**
+3. **Running the Docker Container:**
     - Start the service using Docker Compose:
       ```bash
       docker compose up --build
@@ -39,5 +52,4 @@ The service uses Docker for containerization. By default:
       ```bash
       docker compose down
       ```
-
 ---
